@@ -9,17 +9,26 @@
     <!-- Fontawesome link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Bootstrap link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   </head>
   <body>
-    <!-- Header & Navbar -->
     <header class="bg-dark fixed-top">
       <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold fs-3" href="#">Lennox</a>
+          <!-- Logo as Image -->
+          <a class="navbar-brand" href="Lennox.html">
+            <!-- Larger and responsive logo using relative units -->
+            <img src="images/logoo.jpg" alt="" 
+                 class="img-fluid" 
+                 style="max-height: 90px; width: 150px;">
+          </a>
+          <!-- Navbar Toggler -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Navbar Links -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item mx-2">
@@ -29,29 +38,32 @@
                 <a class="nav-link" href="#portfolio">PORTFOLIO</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#about">ABOUT</a>
+                <a class="nav-link" href="#lennox">ABOUT</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
+                <a class="nav-link" href="#cert">CURRICULUM VITAE</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#contact">CONTACT</a>
               </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-
-    <!-- Hero or Showcase Section -->
-    <section class="hero d-flex flex-column align-items-center justify-content-center">
-      <div class="text-center">
-        <h1 class="h1 text-white fw-medium fst-italic">James Anderson</h1>
-        <h2 class="display-3 text-white fw-bold">Information & Computer Systems <br /> student</h2>
-        <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
-      </div>
-    </section>
     
-    <!-- Skills Section -->
+    
+    <!-- Hero or Showcase Section -->
+<section class="hero d-flex flex-column align-items-center justify-content-center">
+  <div class="text-center">
+    <!-- <h1 class="h1 fw-medium fst-italic text-black">James Anderson</h1> -->
+    <h2 class="display-3 fw-bold text-black">B&H Designs<br /></h2>
+    <h1 class="h1 fw-medium fst-italic text-black">"Quality is our priority..."</h1>
+    <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
+  </div>
+</section>
+
+    
     <section class="container py-5" id="skills">
       <div class="row mt-4 py-3">
         <div class="col-12 d-flex flex-column text-center justify-content-center">
@@ -60,206 +72,111 @@
         </div>
       </div>
       <div class="row d-flex justify-content-between mx-0">
+        <!-- Graphic Design Icon -->
         <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
-          <h3 class="mt-4 h4">Front-end Development</h3>
-          <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly interfaces, and using modern frameworks like ReactJS.</p>
+          <i class="icon text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-palette"></i>
+          <h3 class="mt-4 h4">Graphic Design</h3>
+          <p class="text-center">At <strong>B&H Designs</strong>, we are proficient in creating visually appealing designs using tools like Adobe Photoshop, Illustrator, and Figma. Our experience spans across branding, UI/UX design, and more, ensuring your visual identity stands out.</p>
         </div>
+        <!-- Clothing Branding Icon -->
         <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop"></i>
-          <h3 class="mt-4 h4">Back-end Development</h3>
-          <p class="text-center">Skilled in server-side programming using technologies like Node.js and Express. Experience working with databases such as MongoDB and MySQL.</p>
+          <i class="icon text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-tshirt"></i>
+          <h3 class="mt-4 h4">Clothing Branding</h3>
+          <p class="text-center">At <strong>B&H Designs</strong>, we specialize in designing clothing brand logos, labels, and visual identity elements that effectively represent your brand’s unique style and connect with your target audience.</p>
         </div>
+        <!-- Illustration Icon -->
         <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-mobile-screen-button"></i>
-          <h3 class="mt-4 h4">Mobile App Development</h3>
-          <p class="text-center">Proficient in developing mobile apps for iOS and Android using frameworks like React Native. Experienced in building engaging and intuitive mobile user interfaces.</p>
+          <i class="icon text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-pencil-ruler"></i>
+          <h3 class="mt-4 h4">Illustration</h3>
+          <p class="text-center">At <strong>B&H Designs</strong>, we are experienced in creating illustrations for both web and print. Our team is skilled in using digital tools like Adobe Illustrator and Procreate to craft unique and creative designs that meet your needs.</p>
+        </div>
+        <!-- Data Analysis Icon -->
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+          <i class="icon text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-chart-line"></i>
+          <h3 class="mt-4 h4">Data Analysis</h3>
+          <p class="text-center">At <strong>B&H Designs</strong>, we provide comprehensive <strong>data analysis</strong> services to help businesses make informed decisions. Our team specializes in gathering, processing, and interpreting complex data sets to uncover valuable insights.</p>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="container py-5" id="portfolio">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center justify-content-center">
-          <h2>PORTFOLIO</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254717892776" 
+       class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <section id="graphic-design-section">
+      <h2>My Graphic Design Work</h2>
+      <div class="graphic-design-container">
+        <div class="image-row">
+          <img src="images/POSTER1.jpg" alt="" class="visible-image">
+          <img src="images/Lenox Olweny Mayi.png" alt="" class="visible-image">
+          <img src="images/LAYTASTE FLYER.jpg" alt="" class="visible-image">
+          <!-- <img src="images/jimerald business card.jpg" alt="" class="hidden-image"> -->
+          <img src="images/AFRICAN CLIMATE SUMMIT POSTER.jpg" alt="" class="hidden-image">
+          <!-- <img src="images/POSTER1.jpg" alt="" class="hidden-image"> -->
         </div>
-        <div class="row mt-5 mx-0 justify-content-center align-items-center">
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 col-12 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/POSTER1.jpg" class="img-fluid" alt="">
-              <div class="card-body text-center">
-                <h6 class="card-title">E-commerce Website</h6>
-                <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/AFRICAN CLIMATE SUMMIT POSTER.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/Lenox Olweny Mayi.png" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/AFRICAN CLIMATE SUMMIT POSTER.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/POSTER1.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/AFRICAN CLIMATE SUMMIT POSTER.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-        </div>
-      </div>      
+        <button id="view-more-btn" onclick="toggleImages()">View All</button>
+      </div>
     </section>
+    
+    
 
     <!-- About Section -->
-    <section class="container py-5" id="about">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center">
-          <h2>ABOUT</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">Learn more about me, my background, and what motivates me.</h5>
-        </div>
+    <section class="about-section" id="lennox">
+      <!-- Left: Image -->
+      <div class="about-image">
+          <img src="images/Designs-removebg-preview.png" alt="B&H Designs">
       </div>
-      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-        <div class="col-9 col-md-5 text-md-end">
-          <h5>1995-2008</h5>
-          <h5>Early Passion for Technology</h5>
-          <p>From an early age, I became fascinated with computers and programming. Starting with basic HTML and CSS, I gradually expanded my skills to include JavaScript and various frameworks.</p>
-        </div>
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/about-img-1.jpg" alt="img">
-        </div>
+      <!-- Right: Description -->
+      <div class="about-content">
+          <h2>About B&H Designs</h2>
+          <p>
+              Welcome to B&H Designs, where creativity meets precision. We specialize in delivering unique, custom-made design solutions for your business. With years of experience in graphic design, web development, and branding, B&H Designs has helped countless clients transform their vision into reality. 
+              <br><br>
+              Our mission is to ensure every design we create speaks to the individuality of our clients and helps their brand stand out in today’s competitive market. We strive for excellence and work closely with you every step of the way.
+          </p>
       </div>
-      <div class="row justify-content-md-end mt-5 pt-5">
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/about-img-2.jpg" alt="img">
-        </div>
-        <div class="col-9 col-md-5">
-          <h5>2008-2014</h5>
-          <h5>Higher Education and Career Growth</h5>
-          <p>During my university years, I studied computer science and gained hands-on experience through internships and freelance projects. This period fueled my passion for creating innovative solutions and solving complex problems.</p>
-        </div>
-      </div>
-      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-        <div class="col-9 col-md-5 text-md-end">
-          <h5>2014-Present</h5>
-          <h5>Professional Excellence and Continuous Learning</h5>
-          <p>Throughout my career, I have consistently sought opportunities to refine my skills and stay updated with the latest technologies. I strive for excellence in every project I undertake and aim to deliver valuable and impactful results.</p>
-        </div>
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/about-img-3.jpg" alt="img">
-        </div>
-      </div>
-      <div class="row justify-content-md-end mt-5 pt-5">
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/about-img-4.jpg" alt="img">
-        </div>
-        <div class="col-9 col-md-5">
-          <h5>Future</h5>
-          <h5>Continuing to Make a Difference</h5>
-          <p>I am committed to leveraging my skills and expertise to contribute to meaningful projects that have a positive impact on society. I am eager to take on new challenges and collaborate with talented individuals to create innovative solutions.</p>
-        </div>
-      </div>
-      <div class="row justify-content-md-center mt-5 pt-5">
-        <div class="col-3 col-md-2 d-flex justify-content-center hire-text">
-          <h2 class="h4 d-flex justify-content-center align-items-center bg-primary text-white rounded-circle border border-5 border-dark-subtle"><span class="d-none d-md-block">Your<br>Next<br>Hire</span></h2>
-        </div>
-      </div>      
-    </section>
+  </section>
 
-    <!-- Curriculum Vitae Section -->
-    <section class="container py-5" id="cv">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center">
-          <h2>CURRICULUM VITAE</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">A small sampling of some of the projects I've worked on as a student of the ICS program.</h5>
+  <!-- CV Download Section -->
+  <section class="cv-section" id="cert">
+    <h2>Download My CV</h2>
+    <p>
+        Click the button below to download my latest CV and explore my experience, skills, and expertise in more detail.
+    </p>
+    <a href="images/LENOX CURRICULUM VITAE.pdf" class="cv-button" download>
+        <i class="fas fa-download"></i> Download CV
+    </a>
+</section>
+
+  <section class="tools-section">
+    <h2>My Expertise Tools</h2>
+    <div class="tool-container">
+        <!-- Graphic Design Tools -->
+        <div class="tool-card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Graphic Design Tools</h3>
+            <p>Adobe Photoshop, Illustrator, InDesign</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 mt-5 order-lg-0 order-1 text-center">
-          <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/profile-img.jpg" alt="profile-img">
-          <h2 class="mt-3">James Anderson</h2>
-          <ul class="list-unstyled contact-info">
-            <li><i class="fas fa-envelope me-2"></i> your.email@example.com</li>
-            <li><i class="fas fa-phone me-2"></i> (123) 456-7890</li>
-            <li><i class="fas fa-map-marker-alt me-2"></i> Your Address</li>
-          </ul>
-          <ul class="social-icons my-5 d-flex justify-content-center">
-            <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-          </ul>
-          <h5>Technical Skills</h5>
-          <ul class="list-unstyled">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <!-- Add or remove skills as needed -->
-          </ul>
-          <h5>Personal Interests</h5>
-          <ul class="list-unstyled">
-            <li>Interest 1</li>
-            <li>Interest 2</li>
-            <li>Interest 3</li>
-            <!-- Add or remove interests as needed -->
-          </ul>
+
+        <!-- Cloth Branding Tools -->
+        <div class="tool-card">
+            <i class="fas fa-tshirt"></i>
+            <h3>Cloth Branding Tools</h3>
+            <p>Heat Press, Screen Printing, Embroidery Machines</p>
         </div>
-        <div class="col-lg-7 order-lg-1 order-0 mt-5 text-start">
-          <h3>Profile</h3>
-          <hr>
-          <p>Write a brief description of yourself, your background, and your goals. Highlight your key strengths and experiences.</p>
-          <h3>Highlights of Qualifications</h3>
-          <hr>
-          <ul>
-            <li>Qualification 1</li>
-            <li>Qualification 2</li>
-            <li>Qualification 3</li>
-            <!-- Add or remove qualifications as needed -->
-          </ul>
-          <h3>Education</h3>
-          <hr>
-          <dl>
-            <dt>Year - Year</dt>
-            <dd>University/Institution</dd>
-            <dd>Degree/Program</dd>
-          </dl>
-          <h3>Additional Courses & Training</h3>
-          <hr>
-          <dl>
-            <dt>Year</dt>
-            <dd>Course/Training</dd>
-            <dd>Institution/Organization</dd>
-          </dl>
-          <h3>Work Experience</h3>
-          <hr>
-          <dl>
-            <dt>Year - Year</dt>
-            <dd>Job Position</dd>
-            <dd>Company/Organization</dd>
-            <!-- Add or remove work experience entries as needed -->
-          </dl>
-          <h3>Extracurricular Activities</h3>
-          <hr>
-          <dl>
-            <dt>Organization Name</dt>
-            <dd>Role/Position</dd>
-            <dd>Details of your involvement and contributions</dd>
-          </dl>
+
+        <!-- Illustration Tools -->
+        <div class="tool-card">
+            <i class="fas fa-pencil-alt"></i>
+            <h3>Illustration Tools</h3>
+            <p>CorelDRAW, Procreate, Wacom Tablet</p>
         </div>
-      </div>      
-    </section>
+    </div>
+</section>
+
+    
 
      <!-- Contact Section -->
      <section class="py-5" id="contact">
@@ -301,19 +218,99 @@
        </div>
      </section>
 
-     <!-- Footer -->
      <footer>
-      <div class="container-xxl flex-wrap pt-3 d-flex align-items-center justify-content-center justify-content-md-between">
-        <p>Copyright © 2024 Lennox Mayi</p>
-        <ul class="social-icons d-flex">
-          <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-twitter"></i></small></a>
-          <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-facebook-f"></i></small></a>
-          <a href="#" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-linkedin-in"></i></small></a>
-        </ul>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">B&H Designs</div>
+            <p>CodingLab is a channel where you can learn HTML,
+            CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact Us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Our Services</div>
+          <div><a href="#">Graphic Design</a></div>
+          <div><a href="#">Branding</a></div>
+          <div><a href="#">Data Analysis</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Socials</div>
+          <form action="#">
+            <input type="text" placeholder="Enter email address">
+            <input type="submit" name="" value="Send">
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>
+        </div>
       </div>
-     </footer>
-    
+      <div class="bottom">
+        <p>Copyright © 2020 <a href="#">CodingLab</a> All rights reserved</p>
+      </div>
+    </footer>
      <!-- Bootstrap script link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        function toggleImages() {
+  const hiddenImages = document.querySelectorAll('.image-row .hidden');
+  const viewMoreBtn = document.getElementById('view-more-btn');
+  
+  hiddenImages.forEach(image => {
+    if (image.style.display === 'none' || image.classList.contains('hidden')) {
+      image.style.display = 'block';
+      image.classList.remove('hidden');
+    } else {
+      image.style.display = 'none';
+      image.classList.add('hidden');
+    }
+  });
+
+  // Toggle button text based on visibility of images
+  if (viewMoreBtn.textContent === 'View All') {
+    viewMoreBtn.textContent = 'View Less';
+  } else {
+    viewMoreBtn.textContent = 'View All';
+  }
+}
+
+let expanded = false; // Keep track of whether the images are expanded or not
+
+function toggleImages() {
+  const hiddenImages = document.querySelectorAll('.image-row .hidden-image');
+  const viewMoreBtn = document.getElementById('view-more-btn');
+  
+  if (!expanded) {
+    // Show hidden images
+    hiddenImages.forEach(image => {
+      image.style.display = 'block';
+    });
+    viewMoreBtn.textContent = 'View Less';
+    expanded = true;
+  } else {
+    // Hide hidden images
+    hiddenImages.forEach(image => {
+      image.style.display = 'none';
+    });
+    viewMoreBtn.textContent = 'View All';
+    expanded = false;
+  }
+}
+
+
+
+    </script>
   </body>
 </html>
